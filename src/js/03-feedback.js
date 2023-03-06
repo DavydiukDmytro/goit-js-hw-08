@@ -22,12 +22,11 @@ populateTextarea();
 
 function populateTextarea() {
     const userData = storage.load(STORAGE_KEY);
-    console.log(userData);
     if (userData) {
-        for (key in userData) {
-            console.log('s');
-            // const inputElement = document.querySelector(`[name="${key}"]`);
-            // inputElement.value = userData[key];
+        const keys = Object.keys(userData);
+        for (const key of keys) {
+            const inputElement = document.querySelector(`[name="${key}"]`);
+            inputElement.value = userData[key];
         }
     }
 }
