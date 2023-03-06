@@ -25,8 +25,9 @@ function populateTextarea() {
     
     if (userData) {
         for (key in userData) {
-            const inputElement = document.querySelector(`[name="${key}"]`);
-            inputElement.value = userData[key];
+            console.log('s');
+            // const inputElement = document.querySelector(`[name="${key}"]`);
+            // inputElement.value = userData[key];
         }
     }
 }
