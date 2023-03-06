@@ -22,7 +22,7 @@ populateTextarea();
 
 function populateTextarea() {
     const userData = storage.load(STORAGE_KEY);
-    
+    console.log(userData);
     if (userData) {
         for (key in userData) {
             console.log('s');
